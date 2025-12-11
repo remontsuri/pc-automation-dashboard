@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  color: #e0e0e0;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #2a2a2a;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #4da6ff;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 10px rgba(77, 166, 255, 0.3);
+}
+
+.header p {
+  font-size: 1.1em;
+  color: #999;
+}
+
+.error {
+  background: #ff4444;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.info-card h2 {
+  color: #4da6ff;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.processes-card {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.btn-refresh {
+  background: #4da6ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: rgba(77, 166, 255, 0.1);
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #e0e0e0;
+}
+
+.processes-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.process-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: rgba(77, 166, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.1);
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.process-name {
+  flex: 1;
+  font-weight: 500;
+  color: #4da6ff;
+}
+
+.process-memory {
+  color: #999;
+  margin-right: 15px;
+}
+
+.btn-kill {
+  background: #ff4444;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2em;
+}
