@@ -6,3 +6,6 @@ pydantic==2.5.3
 python-dotenv==1.0.0
 aiofiles==23.2.1
 websockets==12.0
+sqlalchemy==2.0.23
+schedule==1.2.0
+win-inet-pton==1.1.0
