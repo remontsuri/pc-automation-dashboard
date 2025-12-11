@@ -307,4 +307,52 @@ For issues, questions, or suggestions:
 
 ---
 
+## 🚀 Quick Deployment Guide
+
+### Docker Compose (Easiest)
+```bash
+docker-compose up --build
+```
+Access at: http://localhost:3000
+
+### Manual Setup (Windows)
+
+**Backend:**
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+**Frontend:**
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Cloud Deployment
+
+**Vercel (Frontend):** `vercel deploy frontend/`
+**Railway/Render (Backend):** Push to main branch (Auto-deploy via GitHub Actions)
+
+## 📊 Project Statistics
+
+- **Backend**: FastAPI + Python 3.9+
+- **Frontend**: React 18 + Vite
+- **Database**: SQLAlchemy ORM ready
+- **CI/CD**: GitHub Actions pipeline
+- **Container**: Docker & Docker Compose
+- **Lines of Code**: 500+ (production ready)
+
+## 🎯 Next Steps
+
+- [ ] Add unit tests (Jest + Pytest)
+- [ ] Implement WebSocket real-time updates
+- [ ] Deploy to Railway/Vercel
+- [ ] Add Windows Task Scheduler integration
+- [ ] Create system tray app wrapper
+
 **Made with ❤️ for automation enthusiasts**
